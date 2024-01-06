@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VlogVoyage</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Vlog<span>Voyage</span></a>
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="file:///E:/IWD%20Project/about.html">About</a></li>
+            <li><a href="file:///E:/IWD%20Project/videos.html">Videos</a></li>
+            <li><a href="https://chat.whatsapp.com/JP8EuPB4aNK5QgPTTJd5aP" target="_blank">Contact</a></li>
+        </ul>
+        <div class="h-right">
+            <a href="#">Follow us on</a>
+            <a href="https://youtube.com/@abhaychougala?si=hVvavgR0l7US3cXP"target="_blank"><i class="ri-youtube-fill"></i></a>
+            <a href="https://www.instagram.com/abhay.chougala/"target="_blank"><i class="ri-instagram-fill"></i></a>
+            <a href="https://www.facebook.com/"target="_blank"><i class="ri-facebook-box-fill"></i></a>
+            <a href="https://www.snapchat.com/add/abhay.chougala?share_id=MVaXlWPwoAE&locale=en-IN"target="_blank"><i class="ri-snapchat-fill"></i></i></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+    <section class="home">
+        <div class="home-text">
+        <h5>Welcome to our</h5>
+        <h1>Travel<br>Diaries</h1>
+        <p>Embark on a visual odyssey through captivating landscapes, vibrant cultures, and exhilarating experiences with us on our Travel Diaries Vlog. Join our journey as we weave tales of exploration, share insider tips, and immerse ourselves in the extraordinary tapestry of the world, one destination at a time. Get ready to wanderlust with us as we unravel the beauty, excitement, and diversity of our global adventures, inviting you to discover the world through our lens</p>
+        <a href="file:///E:/IWD%20Project/videos.html" class="btn">Watch Our Journeys</a>
+        </div>
+    </section>
+    <section class="feature">
+        <div class="feature-content">
+            <div class="row">
+               <div class="row-img">
+                <img src="1.jpg" >
+               </div>
+               <h3>Edu</h3>
+            </div>
+            <div class="row">
+                <div class="row-img">
+                 <img src="2.jpg" >
+                </div>
+                <h3>Trek</h3>
+             </div>
+             <div class="row">
+                <div class="row-img">
+                 <img src="3.jpg" >
+                </div>
+                <h3>Fun</h3>
+             </div>
+             <div class="row">
+                <div class="row-img">
+                 <img src="4.jpg" >
+                </div>
+                <h3>Food</h3>
+             </div>
+             <div class="row">
+                <div class="row-img">
+                 <img src="5.jpg" >
+                </div>
+                <h3>Explore</h3>
+             </div>
+        </div>
+    </section>
+    <p class="heading">VLOGS</p>
+    <div class="gallery-wrap">
+        <img src="left.png" id="backbtn">
+        <div class="gallery">
+            <div>
+                <span><a href="https://youtu.be/sNugOR9x_3A?feature=shared" target="_blank"><img src="tr1.jpeg"></span></a>
+                <span><a href="https://youtu.be/-_BmUbhC3MM?feature=shared" target="_blank"><img src="TR2.jpeg"></span></a>
+                <span><a href="https://youtu.be/Hi21n99NQu0?feature=shared" target="_blank"><img src="TR3.jpeg"></span></a>
+            </div>
+            <div>
+                <span><a href="https://youtu.be/mmAOsE3bELw?feature=shared" target="_blank"><img src="TR$4.jpeg"></span></a>
+                <span><a href="https://youtu.be/c2qpLtqoi_w?feature=shared" target="_blank"><img src="TR5.jpeg"></span></a>
+                <span><a href="https://youtu.be/LeFcCZ96BA0?feature=shared" target="_blank"><img src="TR6.jpeg"></span></a>
+            </div>
+            <div>
+                <span><a href="https://youtu.be/GjLJVx1gTZY?feature=shared" target="_blank"><img src="TR7.jpeg"></span></a>
+                <span><a href="https://youtu.be/J1MaU5rfH38?feature=shared" target="_blank"><img src="TR8.jpeg"></span></a>
+                <span><a href="https://youtu.be/50Ij0q96lBc?feature=shared" target="_blank"><img src="TR9.jpeg"></span></a>
+            </div>
+            <div>
+                <span><a href="https://youtu.be/REXNIGIHHpw?feature=shared" target="_blank"><img src="TR10.jpeg"></span></a>
+                <span><a href="https://youtu.be/u-k5ooWsKJs?feature=shared" target="_blank"><img src="TR11.jpeg"></span></a>
+                <span><a href="#" target="_blank"><img src="TR12.jpeg"></span></a>
+            </div>
+        </div>
+        <img src="right.png" id="nextbtn">
+    </div>
+    <script>
+        let scrollContainer = document.querySelector(".gallery")
+        let backbtn = document.getElementById("backbtn")
+        let nextbtn = document.getElementById("nextbtn")
+        
+        nextbtn.addEventListener("click",()=>
+        {scrollContainer.style.scrollBehavior="smooth";
+            scrollContainer.scrollLeft += 900;}
+        );
+        backbtn.addEventListener("click",()=>
+        {scrollContainer.style.scrollBehavior="smooth";
+            scrollContainer.scrollLeft -= 900;}
+        );
+    </script>
+    
+    <section class="holiday">
+        <div class="holiday-img">
+            <img src="IMG1.jpeg" height="600px" width="400">
+        </div>
+        <div class="holiday-text">
+            <h5>Insight</h5>
+            <h1 id="siz"> Beauty of Travelling </h1>
+            <p>
+                The beauty of traveling lies not just in the places you visit, but in the transformation it sparks within. It's the stories shared by locals, the mesmerizing landscapes that steal your breath, the flavors that tantalize your taste buds, and the cultures that broaden your perspective. Each journey becomes a canvas upon which memories are painted, unveiling the richness of human connection and the marvels of our planet. Beyond the sights and sounds, traveling unveils a deeper truth—that the world is both vast and intimate, offering moments of serendipity and self-discovery that forever linger in the heart</p>
+        </div>
+    </section>
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <div class="newsletter-text">
+                <h2>Want to go on an expedition?</h2>
+                <p>Join us here to make memories that last a lifetime!</p>
+
+            </div>
+            <form action="">
+                <input type="email" placeholder="Enter your email..." required>
+                <input type="submit" value="Get started" class="btn">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <section class="footer">
+            <div class="footer-box">
+                <h3>Services</h3>
+                <a href="#">Travelling</a>
+                <a href="#">Trekking</a>
+                <a href="#">Vacation</a>
+                <a href="#">Campaigns</a>
+                <a href="#">Food</a>
+            </div>
+            <div class="footer-box">
+                <h3>About</h3>
+                <a href="#">Our Story</a>
+                <a href="#">Benefits</a>
+                <a href="#">Team</a>
+                <a href="#">Equipments</a>
+                <a href="#">Qualification</a>
+            </div>
+            <div class="footer-box">
+                <h3>Help</h3>
+                <a href="#">FAQs</a>
+                <a href="https://chat.whatsapp.com/JP8EuPB4aNK5QgPTTJd5aP">Contact us</a>
+            </div>
+            <div class="footer-box">
+                <h3>Social Media</h3>
+                <div class="social">
+                    <a href="https://youtube.com/@abhaychougala?si=hVvavgR0l7US3cXP"target="_blank"><i class="ri-youtube-fill"></i></a>
+                  <a href="https://www.instagram.com/abhay.chougala/"target="_blank" ><i class="ri-instagram-fill"></i></a>
+                  <a href="https://www.facebook.com/"target="_blank"><i class="ri-facebook-box-fill"></i></a>
+                  <a href="https://www.snapchat.com/add/abhay.chougala?share_id=MVaXlWPwoAE&locale=en-IN"target="_blank"><i class="ri-snapchat-fill"></i></i></a>
+
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
